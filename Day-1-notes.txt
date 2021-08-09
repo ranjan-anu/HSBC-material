@@ -1,0 +1,174 @@
+shrilatat
+password - java
+
+Pen:
+color
+color-ink
+mfr
+price
+type
+
+
+Mouse
+type
+color
+2/3 btn
+mfr
+price
+
+
+AccountObj:
+
+class Account{
+
+data members
+- acountID  
+- Cust-name 
+- ifsc code 
+- type 
+- bal 
+- creation date 
+
+
+-- methods, member functions
+
+deposit(amt){
+   bal = bal + amt;  //code implementation
+}
+
+withdraw(amt){
+   bal = bal - amt;
+}
+
+displayAccountDetails(){
+   print(...)
+}
+
+}
+
+
+
+Obj - state and beh
+
+beh - access current state or change the state
+
+
+
+4 priciples:
+- Encapsulation : hiding of data + behaviour
+- Abstraction - retain what is essential, throw out what isnt
+- Hierarchy
+  - Inheritance  - is-a  - class hierarchy
+  - composition  - has-a  - object Hierarchy
+- Modularity
+- Polymorphism - poly + morph
+
+
+
+
+underline the nouns
+
+
+
+notepad + command line
+
+IDE:
+Eclipse
+Intellij
+Spring Tool Suite (STS)  - Eclipse
+NetbEans
+
+
+main(){
+
+   prinf("hello world")
+}
+
+---------------------
+
+print("Hello World")
+
+--------------------
+
+
+
+
+
+Typeless language
+name="shrilata"
+
+C, C++, Java, C#  - strongly typed langauges
+
+int i;
+char ch;
+boolean flag;
+
+
+8 DT:
+6 - numeric
+4 - integers
+   - byte (1 byte - 8 bits, -127 - +128
+   - short (2 bytes)
+   - int  (4 bytes)
+   - long (8 bytes)
+   
+2 - decimal values
+   - float  (8 bytes)
+   - double
+
+2 - other
+   - char  - single character
+   - boolean - true/false
+
+
+
+if-else ladder
+
+
+if(a==1)
+   //s1
+else if(a==2)
+   //s2
+else if(a==3)
+   //s3
+else
+  .//s4
+
+C - scanf()
+c++ - scanf(), cin
+python - input()
+
+
+Java JDK 1.5, Java 5
+Scanner class
+
+nextXXX()
+nextInt()
+nextFlaot()
+nextDouble()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
