@@ -1,0 +1,178 @@
+Default no-arg cons
+
+setter/getter methods
+setXXX()
+getXXX()
+
+mutator/accessor method
+
+class -
+cons, tostring, set/get
+
+Student - rollno, name, course
+
+
+obj.add(...)
+
+method is bound to teh object at compile time itself
+
+So, by the time code is run (runtime), obj already which method to invoke
+
+
+
+memory management is automated in Java:
+
+1. Box b1;
+2. b1 = new Box(...)
+3. Box b2 = new Box(...)
+4. Box b3 = b1;
+
+b1 = null;
+
+Box b1;
+
+
+First class Object:
+- String
+- array
+
+String str = "hello";
+String str1 = new String("hello")
+
+
+int arr[] = new int[3];
+int arr = {1,2,3,4,5};
+
+
+
+
+String s1 = "";
+
+
+
+int sum[] = new int[arr.length]
+for(int ele : arr)
+   sum[i] = arr[i] * arr[i]
+
+--------------------------
+
+public class ArrayDemo {
+	
+	public void sumArr(int[] arr) {
+		
+		int sum = 0;
+		for(int ele : arr)
+			sum += ele;
+		System.out.println("Sum is  " + sum);
+	}
+	
+	public int[] sqrArr(int[] arr) {
+		int[] newarr = new int[arr.length];
+		
+		for(int i=0; i< arr.length ; i++)
+			newarr[i] = arr[i] * arr[i];
+		
+		return newarr;
+	}
+	
+	public static void main(String[] args) {
+		int intarr[] = {10,20,30,40,50};
+		
+		ArrayDemo demo = new ArrayDemo();
+		demo.sumArr(intarr);
+		
+		int[] arr1 = demo.sqrArr(intarr);
+		
+		
+		
+	}
+
+}
+
+--------------------------------------------
+
+primitives - passed by value
+Objects - passed by ref
+
+
+
+Strings - immutable
+
+
+int a=10, b=20;
+if(a==b)  -- equality op
+
+a = new Date(), b=new Date();
+
+if(a == b)  -- 
+
+-------------------------------------
+
+String s2 = "hello world";
+		//String s1 = new String("hello world");
+		
+		System.out.println(s2.length());     //11
+		//System.out.println(s1.equals(s2));  //true
+		
+		System.out.println(s2.charAt(4));   //o
+		
+		System.out.println(s2.indexOf("o"));  //4
+		System.out.println(s2.indexOf("wor"));  //6
+		
+		System.out.println(s2.toUpperCase());
+		
+		
+		String s3 = "        Saket     suman         ";
+		System.out.println(s3.length());
+		s3 = s3.trim();
+		System.out.println(s3.length());
+
+
+
+Java API docs
+
+Java - String obj is immutable obj
+
+StringBuffer  - upto JDK 1.4  - legacy class, methods run slower, threadsafe
+StringBuilder - JDK 1.5 onwards, methods run much faster
+
+
+
+public class Box {
+	private int length, width, height;
+
+	public void displayDim() {
+		System.out.println("Box [length=" + length + ", width=" + width + ", height=" + height + "]");
+	}
+
+Box b1 = new Box(...);
+v1.setDim(10,20,30);
+b1.displayDim();
+
+b1.length = 100; //wrote into the prop
+print b1.length   //read prop
+
+
+
+Hierarchy:
+  - Inheritance
+  - Composition (has-a)  -- aggregate relationship in class dig
+
+
+int size = scanner.nextInt();
+
+int arr[] = new int[size];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
