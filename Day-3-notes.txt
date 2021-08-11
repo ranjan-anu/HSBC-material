@@ -1,0 +1,259 @@
+class Book{...}
+
+int id = sc.nextInt();
+String bname = ...
+
+Book b1 = new Book(id, bname,...);
+
+
+1) all classes be in package
+2) Comments
+3) Class name - noun, EmployeeManager, Book, Box, employee
+4) var names : noun, camel case  eg salary, designation, bookId, bookName, empFirstName
+4) Method names : verb  camel case  eg compute(), display(), displayEmpDetails()
+
+
+create a class Emp empid, emp name, sal, desig, doj
+
+
+
+OOP - Composition hierarchy (has-a)
+
+UML - class dig - Aggregate relationship : 
+                - composition relationship  : inner class
+
+
+
+method(arg)  // formal parameter
+{
+      ///code
+}
+
+.................
+
+method("shrilata")
+
+
+Pass by value  - primitive
+pass by ref   - objs
+
+----------------
+
+public class Passingargs {
+
+	public void m1(int x) {
+         x += 10;
+         System.out.println("In m1 : " + x);
+	}
+
+	public void m2(String s) {
+        s += " world";
+        System.out.println(s);
+	}
+
+	public void m3(int[] arr) {
+        /*for(int e : arr)
+        	e += 10;*/
+		for(int i=0; i< arr.length;i++)
+			arr[0] = 1000;
+	}
+	
+	public void m4(Box b) {
+       b.setHeight(300);
+	}
+
+	
+	public static void main(String[] args) {
+		Passingargs pa1 = new Passingargs();
+		int a = 10;
+		pa1.m1(a);
+		System.out.println(a);
+		
+		String str = "Hello";
+		pa1.m2(str);
+		System.out.println(str);
+		
+		int arr[] = {1,2,3,4,5};
+		pa1.m3(arr);
+		for(int e : arr) System.out.println(e);
+		
+		Box b1 = new Box(1,2,3);
+		pa1.m4(b1);
+		System.out.println(b1);
+		
+	}
+}
+
+
+============================
+
+
+Emp (empid, empname)
+
+
+WageEmp (hrs, rate)  calcSalary()
+
+
+SalesEmp(comm)
+
+
+
+class WageEmp :: Emp
+
+class WageEmp extends Emp
+               is-a
+
+
+emp f1()
+
+WageEmp f1() override
+
+SakesEmp  f1() overridden
+    ((Emp)se1).f1()
+
+     se1.f1()
+
+
+Method overloading
+     - same name, signature is diff. Return type does not matter
+     - static polymorphism
+
+Method overriding
+     - signature is exactly same
+     - between parent and sub class
+     - dynamic polymorphism
+    
+
+
+Object, Class
+
+Encapsulation
+Hierarchy - compostion, inheritance
+Polymorphism  - static, dynamic
+
+
+c1
+   public void f1(){
+
+  }
+
+
+
+c2 extends c1
+   
+
+@override
+public void f1(int i){
+
+}
+
+
+
+
+
+
+package1
+
+www.hsbc.com
+
+
+com.hsbc
+com.hsbc.personalAccount
+
+com.hsbc.loanaccount
+
+com.hsbc.fixedDeposit
+
+
+
+
+
+
+p1
+folder p1
+
+com.hsbc
+com
+  hsbc
+
+
+java.lang (def)   - String, System
+java.awt
+java.net
+java.io
+java.sql
+java.util - Scanner
+
+import java.util.Scanner;
+
+Scanner sc = new Scanner();
+sc.nextXXX()
+
+
+
+default - public to the package
+
+protected
+ - child
+ - sibling
+
+
+Mdifiers : final, static, abstract
+
+final 
+  - variable  //constant - cannot be changed
+  - method   //cannot override this method
+  - class    //subclass this class
+
+
+final int i = 10;  //constant
+final pi = 3.14;
+
+
+
+public final void m1(){
+....
+}
+
+final class Emp{
+
+}
+
+
+
+
+Object - superclass, cosmic superclass
+
+class Emp [extends Object]{
+
+}
+
+class WageEmp extends Emp{
+
+}
+
+static
+  - variable : var is visible across all instances
+  - method : invoked even without instance of class!!
+
+  - class (inner static)  XX
+  - block  (static cons)  XX
+
+
+obj.instance_method();
+Class-name.method()
+
+String.join()
+
+Math.abs(-100);  //100
+
+
+instance_method()
+    - instance var
+    - static variables
+
+static_method()
+    - static vars
+    - isntance var  XXX (not accessible)
+
+
