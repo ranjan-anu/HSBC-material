@@ -1,0 +1,185 @@
+
+1. A a = new A()  legal
+2. B b = new B()  legal
+   b.m1()   b's method
+
+3. C c = new C()  legal
+     c.m1()  c's method
+
+4. A a = new B();  legal
+     a.m1()   compile error
+
+5. B b = (B)(new A());  legal
+
+6. A a = new C()  legal
+    a.m1()   compile error
+
+
+7. B b = new C();  legal
+     b.m1()   c's m1()
+
+
+LHS - same class, super, abstact, interface
+
+
+
+Product  display()
+  - Item   display()
+  - Service  display()
+
+Product p1 = new Item();
+Product p2 = new Service();
+
+p1.display()
+p2.display()
+
+
+
+abstract
+   - method
+   - class
+
+
+class Point{
+   int x, y;
+
+   public void draw(){
+    //draw a point
+    }
+   
+}  
+
+class Circle{
+   int rad;
+
+
+   public void draw(){
+    //draw a circle
+    }
+
+
+  main(){
+     Point c = new Circle(10);
+     c.draw();
+
+}
+
+
+class Sphere extends Circle{
+
+  Point p = new Sphere();
+   p.draw()
+
+
+
+
+drawIt(____  obj){
+
+   obj.draw();
+}
+
+
+m1(Box box){
+
+}
+
+m2(Date d1){
+
+}
+
+abstract class Shape{
+    color;
+    get/set   //concrete methods
+
+    public abstract void draw();
+}
+
+
+
+class Acceleratable{
+
+    public obj accelerate(complex parameters){  //concrete
+      //code
+    }
+}
+
+interface Brakeable{
+   
+    public complex-obj brake(complex parameters);
+     
+}
+
+                is-a                 i-promise-to-adhere-to-contract
+class JavaCar extends Acceleratable    implements    Brakeable{
+
+    public obj accelerate(complex parameters){
+      //code
+    }
+
+    public complex-obj brake(complex parameters){
+       //code 
+   }
+  
+}
+
+
+1. interfaces can contain ONLY abstract methods. 
+2. interfaces can have variables. 
+
+
+I1
+  - m1()
+  - m2(int, int)
+
+I2
+  - m1()
+  - m3(String)
+  - m4(float,float)
+
+class MyClass impls I1, I2
+{
+ 
+   public void m1(){
+
+   }
+
+}
+
+
+
+
+OOP - SRP - single responsibilty principle
+
+
+Layered arch:
+
+- UI layer - UI logic
+- Business layer - BL
+- Data Access Layer - Data Access Logic
+
+
+
+
+DAO
+CRUD ops
+Create, Read, Update, Delate
+
+public Emp[] getAllEmps()
+public Emp getEmpWithId(int id)
+public Emp getEmpWithName(String n)
+public void updateEmp(int id, String newname)
+deleteEmpWithId(int id)
+addEmp(Emp obj)
+
+Design to interface
+
+
+
+Box b1 = null;
+...
+ b1 = new Box();
+
+EmpDBDao impl intf
+
+
+
