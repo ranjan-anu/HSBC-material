@@ -1,0 +1,108 @@
+GOF Design Patterns  OOP
+
+Factory DP
+
+factory.getProduct()
+
+BoxFactory factory = new BoxFactory();
+
+Box box = factory.getBox(1,2,3);
+
+
+interface StorageFactory{
+      getStore()
+}
+
+
+class PizzaFactory{
+     public static Pizza[] getPizzaStore(int size){
+        Pizza[] arr = new Pizza[size];
+        return arr;
+    }
+}
+
+PizzaDAO{
+
+     Pizza[] arr;
+      static int count=0;
+
+    PizzaDAO(Pizza[] arr){
+      //this arr will contain pizza later
+   }
+
+custView{
+     custView(){
+        Pizza[] arr = PizzaFactory.getPizzaStore(10);
+        PizzaDAO dao = new PizzaDao(arr);
+      }
+main
+   dao.addPizza();
+
+      
+
+static - var, method, class, block
+
+
+static{
+
+}
+
+for(){
+
+
+}
+
+
+1. 1 try must have min 1 catch block, at least finally
+2. 1 try can have any no of catch blocks
+
+
+try
+catch
+throws
+finally {}
+
+try:
+   //code
+except:
+   //code
+
+
+
+setMovieName(String name){
+   //throw an InvalidMovieNameException
+   this.movieName = name;
+}
+
+
+
+Byte - byte stream  (data flows in a stream of bytes) 
+binary files - image , audio, 
+
+
+Character - char stream (data flows in a stream of characters)
+text files/textual data
+
+
+InputSteam (a)
+fis.
+
+read()  - reads one byte at a time
+read(byte[] b) - reads multiple bytes into a byte array
+
+
+
+InputStream
+
+FilerInputStream
+
+BufferedInputStream  - 
+
+
+Chaining-of-stream
+
+
+
+
+
+
