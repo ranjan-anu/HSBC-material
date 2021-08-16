@@ -1,0 +1,86 @@
+layered arch:
+
+com.hsbc.model
+    - Emp.java
+
+com.hsbc.dao
+    - EmpDaoIntf.java
+    - EmpDaoImpl.java
+
+com.hsbc.service
+    - EmpServiceIntf.java
+    - EmpService.java
+
+com.hsbc.client
+    - TestDao.java
+
+
+
+
+3 ways of looping thru collections:
+- traditional for loop
+- Itearable
+- for() - Enhanced for loop in  java 5
+
+
+Comparable              Comparator
+java.lang               java.util
+compareTo()             compare()  
+o1.compareTo(o2)        compare(o1, o2)
+
+
+
+algo:
+  o1 < o2 return -1
+  o1 > o2 return 1
+  o1 == o2 return 0
+
+Collections.sort(arg1, arg2)
+
+
+public int hashCode()
+    {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + salary;
+        return result;
+    }
+
+@Override
+public int hashCode()
+{
+    final int PRIME = 31;
+    int result = 1;
+    result = PRIME * result + getId();
+    return result;
+}
+
+
+
+POJO
+Beans - follows certain rules
+Entity classes
+Model classes
+
+Emp, Date, Book, Box, 
+StudentDao, TestStudent
+
+
+equals() -> ==
+
+
+
+
+public int hashCode(){
+   return this.rollno;
+}
+
+
+only if i override equals(), i MUST override hashCode()
+
+
+
+
+
+
+
+
